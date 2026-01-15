@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maafin Aku, Vee 💗</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Decorative blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <main class="app">
+    <header class="top">
+      <div class="brand">
+        <span class="spark">✨</span>
+        <h1>Untuk Vany</h1>
+      </div>
+      <p class="subtitle">
+        Aku bikin ini khusus buat kamu… boleh ya aku minta kesempatan buat tetep jadi temen kamu?
+      </p>
+    </header>
+
+    <section class="card hero" aria-label="Kartu permintaan maaf">
+      <div class="hero-left">
+        <div class="badge">💌 Apology Mode</div>
+        <h2>Maafin aku ya, Vany…</h2>
+        <p class="text">
+          Aku sadar aku salah dan aku beneran nyesel. Kamu berharga banget buat aku.
+          Aku pengen buktiin lewat tindakan, bukan cuma kata-kata.
+        </p>
+
+        <div class="cta-row">
+          <button id="btnStart" class="btn primary">Mulai Game 💞</button>
+          <button id="btnOpenLetter" class="btn ghost" disabled>Buka Surat 📩</button>
+        </div>
+
+        <div class="progress-wrap">
+          <div class="progress-label">
+            <span>Hati terkumpul</span>
+            <span id="scoreText">0 / 10</span>
+          </div>
+          <div class="progress">
+            <div id="progressBar" class="progress-bar" style="width:0%"></div>
+          </div>
+          <p class="hint">Mainkan game “Tangkap Hati” dulu ya. Kumpulin 10 hati buat buka surat.</p>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-frame" role="img" aria-label="Ilustrasi romantis">
+          <div class="heart-big">💗</div>
+          <div class="mini">💞</div>
+          <div class="mini m2">💖</div>
+          <div class="mini m3">💕</div>
+        </div>
+
+        <div class="sound">
+          <label class="toggle">
+            <input id="toggleSound" type="checkbox" checked>
+            <span class="slider"></span>
+          </label>
+          <span class="sound-label">SFX: ON</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card game" aria-label="Game Tangkap Hati">
+      <div class="game-head">
+        <h3>Mini Game: Tangkap Hati 💘</h3>
+        <div class="game-stats">
+          <span class="pill">Waktu: <b id="timeText">20</b>s</span>
+          <span class="pill">Combo: <b id="comboText">0</b>x</span>
+        </div>
+      </div>
+
+      <div class="game-area" id="gameArea" aria-label="Area game">
+        <div class="game-overlay" id="gameOverlay">
+          <div class="overlay-box">
+            <h4 id="overlayTitle">Siap, Vany? 💗</h4>
+            <p id="overlayDesc">
+              Klik hati yang muncul! Kumpulin 10 hati dalam 20 detik untuk membuka surat maaf.
+            </p>
+            <button id="btnPlay" class="btn primary">Main Sekarang</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-foot">
+        <button id="btnReset" class="btn ghost">Ulangi</button>
+        <p class="small">
+          Tip: klik cepat berurutan buat dapetin combo ✨
+        </p>
+      </div>
+    </section>
+
+    <section class="card letter" aria-label="Surat untuk Vany">
+      <div class="letter-head">
+        <h3>Surat Kecil Buat Vany 💌</h3>
+        <span class="seal">💗</span>
+      </div>
+
+      <div class="letter-body">
+        <p id="letterText">
+          Vany, i'm really sorry.
+Maaf kalau aku pernah bikin kamu merasa uncomfortable, itu sama sekali bukan niat aku. Aku juga minta maaf kalau sikap dan kata-kataku tanpa sadar bikin kamu merasa menjauh. I never wanted you to feel like you had to leave or disappear from my life. The truth is, I just want you to stay here, with me—without pressure, without fear, tanpa harus ngerasa berat.
+Aku menyesal karena mengingat dan membahas hal-hal yang seharusnya nggak perlu diingat lagi. I realize now that not everything from the past needs to be brought back, especially if it hurts you. Please know that i'm trying to be better, more aware, and more careful with your feelings. I don't want to force anything, I just want to make things right, slowly, and show you that I truly care about you.
+        </p>
+
+        <div class="choices">
+          <button id="btnForgive" class="btn primary">Maafin Aku 🥺</button>
+          <button id="btnNotYet" class="btn danger">Aku Masih Kesel 😤</button>
+        </div>
+
+        <div id="resultBox" class="result hidden" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Dibuat dengan tulus oleh <span class="signature">Daffa</span> untuk <b>Vany</b> 💗
+      </p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
