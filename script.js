@@ -253,7 +253,7 @@ btnForgive.addEventListener("click", () => {
     <b>Makasi ya, Vany… 😭💗</b><br/>
     Aku janji bakal dengerin kamu, jaga perasaan kamu, dan buktiin aku bisa lebih baik.
     <br/><br/>
-    <span style="opacity:.9">Mau nggak kita mulai dari pelan-pelan, bareng-bareng?</span>
+    <span style="opacity:.9">Mau nggak kita mulai dari pelan-pelan, bareng-bareng?,kalo iyaa plis chat discord aku secepatnya yaaa</span>
   `;
   sfx("win");
 });
@@ -263,7 +263,7 @@ btnNotYet.addEventListener("click", () => {
   resultBox.innerHTML = `
     <b>Oke… aku ngerti. 😔</b><br/>
     Kamu berhak kesel. Aku nggak akan maksa.
-    Tapi aku tetap mau berusaha sampai kamu ngerasa aman dan dihargai lagi.
+    Tapi aku tetap mau berusaha sampai kamu ngerasa aman dan dihargai lagi,tapi jangan kelamaan ya ngilangnya aku nungguin soalnya huhuu,aku kangen soalnya.
     <br/><br/>
     <span style="opacity:.9">Kalau kamu siap, aku ada di sini.</span>
   `;
